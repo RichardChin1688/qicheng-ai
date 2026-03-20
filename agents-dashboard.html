@@ -278,22 +278,25 @@
             }
             
             .banner-logo {
-                display: none; /* 手机端隐藏 Logo */
+                height: 45px; /* Logo 等比例缩小 */
+                width: auto;
+                left: 15px;
             }
             
             .banner-title {
-                font-size: 1.1em;
+                font-size: 0.9em;
                 text-align: center;
                 position: static;
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
+                padding: 0 60px; /* 给 Logo 和按钮留空间 */
             }
             
             .banner-play-btn {
-                width: 40px;
-                height: 40px;
-                font-size: 20px;
+                width: 36px;
+                height: 36px;
+                font-size: 18px;
                 right: 15px;
             }
         }
