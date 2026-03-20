@@ -271,30 +271,33 @@
             .header h1 { font-size: 2em; }
             .agents-grid { grid-template-columns: 1fr; }
             
-            /* 手机端横幅优化 - 只显示 Logo，不显示文字 */
+            /* 手机端横幅优化 */
             .top-banner {
                 height: 60px;
                 padding: 0 15px;
-                justify-content: space-between;
             }
             
             .banner-logo {
                 height: 45px; /* Logo 等比例缩小 */
                 width: auto;
-                position: static; /* 取消绝对定位 */
-                margin-left: 0;
+                left: 15px;
             }
             
             .banner-title {
-                display: none; /* 手机端隐藏文字标题 */
+                font-size: 0.9em;
+                text-align: center;
+                position: static;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                padding: 0 60px; /* 给 Logo 和按钮留空间 */
             }
             
             .banner-play-btn {
                 width: 36px;
                 height: 36px;
                 font-size: 18px;
-                position: static; /* 取消绝对定位 */
-                margin-right: 0;
+                right: 15px;
             }
         }
     </style>
