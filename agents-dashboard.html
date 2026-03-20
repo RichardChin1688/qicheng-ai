@@ -270,6 +270,32 @@
         @media (max-width: 768px) {
             .header h1 { font-size: 2em; }
             .agents-grid { grid-template-columns: 1fr; }
+            
+            /* 手机端横幅优化 */
+            .top-banner {
+                height: 60px;
+                padding: 0 15px;
+            }
+            
+            .banner-logo {
+                display: none; /* 手机端隐藏 Logo */
+            }
+            
+            .banner-title {
+                font-size: 1.1em;
+                text-align: center;
+                position: static;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            
+            .banner-play-btn {
+                width: 40px;
+                height: 40px;
+                font-size: 20px;
+                right: 15px;
+            }
         }
     </style>
 </head>
